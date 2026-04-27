@@ -8,12 +8,17 @@
     "editor.defaultFormatter": "ms-dotnettools.csharp",
     "editor.formatOnSave": true
   },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
+  "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
 
   "files.watcherExclude": {
     "**/.wrangler/**": true,
@@ -24,7 +29,9 @@
     "**/packages/**": true,
     "**/TestResults/**": true,
     "**/publish/**": true,
-    "**/dist/**": true
+    "**/dist/**": true,
+    "**/artifacts/**": true,
+    "**/out/**": true
   },
   "search.exclude": {
     "**/.wrangler": true,
@@ -35,6 +42,8 @@
     "**/packages": true,
     "**/TestResults": true,
     "**/publish": true,
-    "**/dist": true
+    "**/dist": true,
+    "**/artifacts": true,
+    "**/out": true
   }
 }

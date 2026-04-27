@@ -1,10 +1,14 @@
 {
   "recommendations": [
     "openai.chatgpt",
+    "ms-dotnettools.csharp",
     "ms-dotnettools.csdevkit",
     "ms-dotnettools.vscode-dotnet-runtime",
     "ms-vscode.powershell",
+    "ms-vscode.cpptools",
+    "ms-vscode.cmake-tools",
     "redhat.vscode-xml",
+    "visualstudioexptteam.vscodeintellicode",
     "esbenp.prettier-vscode",
     "editorconfig.editorconfig",
     "streetsidesoftware.code-spell-checker",

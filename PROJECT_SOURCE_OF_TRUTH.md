@@ -7,6 +7,9 @@ This file is the project source of truth.
 ## 1. Project Source of Truth
 
 - This file is the project source of truth.
+- This repo is for **Windows application development**. Default to C#/.NET desktop app conventions unless future source files explicitly establish a different stack.
+- Repository-local files (`AGENTS.md`, `.cursor/rules/workflow-push-deploy.mdc`, `.vscode/settings.json`, `.vscode/extensions.json`) are authoritative for agent workflow and workspace defaults.
+- Recommended Cursor profile: **Custom App Development**. Do not use the **WordPress Builds** profile for this workspace.
 - Do not rename ENV keys, form field names, tracking names, or pipeline endpoints unless this file is updated first.
 - Preserve existing values. Do not overwrite with guesses.
 - Harden information so it cannot be overwritten in ENV.
@@ -14,14 +17,13 @@ This file is the project source of truth.
 - **Secrets:** store tokens and API keys only in the **host environment**, OS keychain, or **GitHub Actions encrypted secrets** — never in git-tracked files, rules, or chat logs. Use `gh auth login`, SSH remotes, or CI `GITHUB_TOKEN` as appropriate. Rotate any credential that was pasted into an insecure channel.
 - Use authenticated tooling to log in, audit, and work as needed (never commit the credential itself).
 
-## 2. Website Build Philosophy - Architecture
+## 2. Windows App Build Philosophy - Architecture
 
-- Templates, wrappers, global elements, and section libraries are the base for all pages and sections.
-- Use section libraries, UI/UX library elements, and reusable building blocks for all front-end sections and elements.
-- Prefer reusable building blocks.
-- Make no or minimal ad hoc changes.
-- Standardize all front-end UI/UX elements, spacing, padding, fonts, buttons, cards, and section patterns.
-- Use the best architecture possible for the current needs.
+- Keep application UI, presentation logic, domain logic, persistence, build, packaging, and deployment concerns separated.
+- Prefer reusable controls, services, and configuration over one-off app-specific patches.
+- Standardize desktop UI behavior, spacing, typography, commands, dialogs, and error handling through shared components or styles when the app stack supports it.
+- Preserve Windows build outputs and generated installer artifacts outside source history unless explicitly required.
+- Use the best architecture possible for the current needs without introducing unnecessary framework churn.
 
 ## 3. Build / Deploy / Infrastructure
 

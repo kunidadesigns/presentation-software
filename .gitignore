@@ -5,6 +5,7 @@
 
 # Dependencies and tooling
 node_modules/
+.codex
 
 # Cloudflare Wrangler local state
 .wrangler/
@@ -16,10 +17,26 @@ dist/
 publish/
 packages/
 TestResults/
+artifacts/
+out/
 
 # .NET / VS
 .vs/
+*.suo
 *.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.nupkg
+*.snupkg
+*.pdb
+
+# Windows app packaging
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.appinstaller
 
 # OS
 .DS_Store

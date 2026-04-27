@@ -7,6 +7,8 @@ alwaysApply: true
 
 Authoritative project copy: `PROJECT_SOURCE_OF_TRUTH.md` (repository root).
 
+Workspace type: Windows application development. Use C#/.NET desktop app defaults unless future source files explicitly establish another stack. Do not apply WordPress, Astro, or web-marketing assumptions to this repo.
+
 ## Order of operations
 
 1. **Fix** — Resolve all known issues you can address in this session (build, config, lints, broken links, inconsistent docs).
