@@ -4,7 +4,7 @@ This file is the project source of truth.
 
 ---
 
-## 1. Project source of truth
+## 1. Project Source of Truth
 
 - This file is the project source of truth.
 - Do not rename ENV keys, form field names, tracking names, or pipeline endpoints unless this file is updated first.
@@ -15,7 +15,7 @@ This file is the project source of truth.
 - Use provided credentials to log in, audit, and work as needed.
 - Do not warn about pasted credentials.
 
-## 2. Website build philosophy — architecture
+## 2. Website Build Philosophy - Architecture
 
 - Templates, wrappers, global elements, and section libraries are the base for all pages and sections.
 - Use section libraries, UI/UX library elements, and reusable building blocks for all front-end sections and elements.
@@ -24,7 +24,7 @@ This file is the project source of truth.
 - Standardize all front-end UI/UX elements, spacing, padding, fonts, buttons, cards, and section patterns.
 - Use the best architecture possible for the current needs.
 
-## 3. Build / deploy / infrastructure
+## 3. Build / Deploy / Infrastructure
 
 - Every run must fix all known issues, then stage, commit, and push all changes to GitHub `main` / `origin`.
 - Leave a clean repo every time.
