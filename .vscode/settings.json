@@ -2,7 +2,10 @@
   "chatgpt.runCodexInWindowsSubsystemForLinux": true,
 
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.formatOnSave": true
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -12,20 +15,22 @@
 
   "files.watcherExclude": {
     "**/node_modules/**": true,
-    "**/.expo/**": true,
-    "**/android/.gradle/**": true,
-    "**/android/build/**": true,
-    "**/ios/Pods/**": true,
-    "**/ios/build/**": true,
+    "**/bin/**": true,
+    "**/obj/**": true,
+    "**/.vs/**": true,
+    "**/packages/**": true,
+    "**/TestResults/**": true,
+    "**/publish/**": true,
     "**/dist/**": true
   },
   "search.exclude": {
     "**/node_modules": true,
-    "**/.expo": true,
-    "**/android/.gradle": true,
-    "**/android/build": true,
-    "**/ios/Pods": true,
-    "**/ios/build": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/.vs": true,
+    "**/packages": true,
+    "**/TestResults": true,
+    "**/publish": true,
     "**/dist": true
   }
 }

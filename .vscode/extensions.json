@@ -1,19 +1,21 @@
 {
   "recommendations": [
     "openai.chatgpt",
-    "expo.vscode-expo-tools",
-    "msjsdiag.vscode-react-native",
-    "dbaeumer.vscode-eslint",
+    "ms-dotnettools.csdevkit",
+    "ms-dotnettools.vscode-dotnet-runtime",
+    "ms-vscode.powershell",
+    "redhat.vscode-xml",
     "esbenp.prettier-vscode",
     "editorconfig.editorconfig",
     "streetsidesoftware.code-spell-checker",
     "usernamehw.errorlens",
     "mikestead.dotenv",
     "redhat.vscode-yaml",
-    "github.vscode-github-actions",
-    "anysphere.remote-wsl"
+    "github.vscode-github-actions"
   ],
   "unwantedRecommendations": [
-    "JohannesVoderholzer.codex-model-integration"
+    "JohannesVoderholzer.codex-model-integration",
+    "expo.vscode-expo-tools",
+    "msjsdiag.vscode-react-native"
   ]
 }
