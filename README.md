@@ -29,9 +29,15 @@ Local development folder for the Windows application development repo [`kunidade
 ## Requirements
 
 - WSL with `git`, .NET SDK, and [`gh`](https://cli.github.com/) authenticated to `kunidadesigns`.
+- Node 20 or newer for repository policy checks.
 - Windows-side build tools as needed for the chosen desktop app stack.
 
 `GH_TOKEN` is set in new shells from `gh auth token` when unset (see `~/.bashrc`).
+
+## Checks
+
+- `npm run check:workspace` validates the repo workflow lock, Windows app profile settings, recommended extensions, ignore rules, CI wiring, and secret-pattern hygiene.
+- GitHub Actions runs the same check on pushes and pull requests to `main`.
 
 ## Codex (OpenAI)
 

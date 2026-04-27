@@ -12,10 +12,11 @@ Workspace type: Windows application development. Use C#/.NET desktop app default
 ## Order of operations
 
 1. **Fix** — Resolve all known issues you can address in this session (build, config, lints, broken links, inconsistent docs).
-2. **Clean** — Working tree must end clean: no stray unstaged changes that belong in history; no intentional half-done edits.
-3. **Ship** — `git add -A`, commit with a clear message, **`git push origin main`** (or the tracked default branch if not `main`).
-4. **Deploy** — After a successful build (when the project has a build), run the repo’s normal Cloudflare or app deploy command (for example `npm run deploy`, `npm run deploy:ci`, or `wrangler deploy` / `wrangler pages deploy`). If there is no deploy script or Wrangler/Pages config yet, note that and skip; do not invent destructive deploys.
-5. **Blockers** — If push or deploy fails, report the error and the smallest next step; do not claim success.
+2. **Verify** — Run `npm run check:workspace` plus any app-specific build/test checks that exist.
+3. **Clean** — Working tree must end clean: no stray unstaged changes that belong in history; no intentional half-done edits.
+4. **Ship** — `git add -A`, commit with a clear message, **`git push origin main`** (or the tracked default branch if not `main`).
+5. **Deploy** — After a successful build (when the project has a build), run the repo’s normal Cloudflare or app deploy command (for example `npm run deploy`, `npm run deploy:ci`, or `wrangler deploy` / `wrangler pages deploy`). If there is no deploy script or Wrangler/Pages config yet, note that and skip; do not invent destructive deploys.
+6. **Blockers** — If push or deploy fails, report the error and the smallest next step; do not claim success.
 
 Do not regress, delete, or ignore this order. Include it in your mental workflow for every run in this repository.
 

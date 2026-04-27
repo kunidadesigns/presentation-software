@@ -7,7 +7,7 @@ This repository is the source-controlled workspace for Presentation Software.
 Every agent run in this repo must follow this order:
 
 1. Fix all known issues that can be addressed in the session.
-2. Verify the repository state with the available local checks.
+2. Verify the repository state with `npm run check:workspace` and any app-specific checks that exist.
 3. Stage all intentional changes.
 4. Commit with a clear message.
 5. Push `main` to `origin`.

@@ -27,9 +27,11 @@ This file is the project source of truth.
 
 ## 3. Build / Deploy / Infrastructure
 
+- Repository policy check: `npm run check:workspace`.
 - Every run must fix all known issues, then stage, commit, and push all changes to GitHub `main` / `origin`.
 - Leave a clean repo every time.
 - Every run must be pushed to GitHub for deployment to Cloudflare.
+- Cloudflare deploy command is not configured yet. Do not invent one; add the real deploy command only after the app or Cloudflare project config exists.
 - There should be no blockers.
 - This is a permanent, non-negotiable hard rule.
 - Do not regress, delete, or ignore this order.
