@@ -14,6 +14,7 @@
   },
 
   "files.watcherExclude": {
+    "**/.wrangler/**": true,
     "**/node_modules/**": true,
     "**/bin/**": true,
     "**/obj/**": true,
@@ -24,6 +25,7 @@
     "**/dist/**": true
   },
   "search.exclude": {
+    "**/.wrangler": true,
     "**/node_modules": true,
     "**/bin": true,
     "**/obj": true,

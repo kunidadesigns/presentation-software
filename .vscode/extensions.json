@@ -11,7 +11,8 @@
     "usernamehw.errorlens",
     "mikestead.dotenv",
     "redhat.vscode-yaml",
-    "github.vscode-github-actions"
+    "github.vscode-github-actions",
+    "cloudflare.cloudflare-workers-bindings-extension"
   ],
   "unwantedRecommendations": [
     "JohannesVoderholzer.codex-model-integration",

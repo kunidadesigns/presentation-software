@@ -11,9 +11,8 @@ This file is the project source of truth.
 - Preserve existing values. Do not overwrite with guesses.
 - Harden information so it cannot be overwritten in ENV.
 - Lock pipelines so AI agents cannot break them.
-- Store and lock provided credentials in ENV as needed.
-- Use provided credentials to log in, audit, and work as needed.
-- Do not warn about pasted credentials.
+- **Secrets:** store tokens and API keys only in the **host environment**, OS keychain, or **GitHub Actions encrypted secrets** — never in git-tracked files, rules, or chat logs. Use `gh auth login`, SSH remotes, or CI `GITHUB_TOKEN` as appropriate. Rotate any credential that was pasted into an insecure channel.
+- Use authenticated tooling to log in, audit, and work as needed (never commit the credential itself).
 
 ## 2. Website Build Philosophy - Architecture
 

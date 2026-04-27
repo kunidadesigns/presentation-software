@@ -1,8 +1,11 @@
 # Presentation Software
 
-**Agent and project rules:** [`PROJECT_SOURCE_OF_TRUTH.md`](PROJECT_SOURCE_OF_TRUTH.md)
+**Agent and project rules:** [`PROJECT_SOURCE_OF_TRUTH.md`](PROJECT_SOURCE_OF_TRUTH.md)  
+**Cursor agent workflow (always on):** [`.cursor/rules/workflow-push-deploy.mdc`](.cursor/rules/workflow-push-deploy.mdc)
 
 Local development folder for the GitHub repo [`kunidadesigns/presentation-software`](https://github.com/kunidadesigns/presentation-software).
+
+**GitHub org URL pattern:** `https://github.com/kunidadesigns/<repo-name>`
 
 ## WSL layout
 

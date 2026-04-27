@@ -1,0 +1,26 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+
+# Dependencies and tooling
+node_modules/
+
+# Cloudflare Wrangler local state
+.wrangler/
+
+# Build outputs (also in .vscode watcher/search excludes)
+bin/
+obj/
+dist/
+publish/
+packages/
+TestResults/
+
+# .NET / VS
+.vs/
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
