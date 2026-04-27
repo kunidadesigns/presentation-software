@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "openai.chatgpt",
+    "expo.vscode-expo-tools",
+    "msjsdiag.vscode-react-native",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "mikestead.dotenv",
+    "redhat.vscode-yaml",
+    "github.vscode-github-actions",
+    "anysphere.remote-wsl"
+  ],
+  "unwantedRecommendations": [
+    "JohannesVoderholzer.codex-model-integration"
+  ]
+}
