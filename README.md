@@ -1,5 +1,7 @@
 # Presentation Software
 
+**Agent and project rules:** [`PROJECT_SOURCE_OF_TRUTH.md`](PROJECT_SOURCE_OF_TRUTH.md)
+
 Local development folder for the GitHub repo [`kunidadesigns/presentation-software`](https://github.com/kunidadesigns/presentation-software).
 
 ## WSL layout
