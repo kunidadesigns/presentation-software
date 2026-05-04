@@ -17,7 +17,7 @@
  */
 
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
-import { join, basename } from "node:path";
+import { join } from "node:path";
 
 const CWD = process.cwd();
 const GITIGNORE = join(CWD, ".gitignore");

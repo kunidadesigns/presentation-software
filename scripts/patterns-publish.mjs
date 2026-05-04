@@ -20,7 +20,7 @@
  */
 
 import { existsSync, readFileSync, writeFileSync, mkdirSync, copyFileSync, readdirSync, statSync } from "node:fs";
-import { join, resolve, dirname, basename, extname } from "node:path";
+import { join, resolve, basename } from "node:path";
 
 const args = process.argv.slice(2);
 const sourcePath = args.find((a) => !a.startsWith("--"));

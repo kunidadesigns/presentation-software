@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Agent workflow (Presentation-Software-local extensions)
 
-Source-control discipline (stage all → commit → push every run, clean repo every time) is **inherited** from `HR-028` — see `.cursor/rules/inherited/shared/.cursorrules` and `.cursor/rules/inherited/shared/rules/network-bloat-prevention.mdc`.
+Source-control discipline (stage all → commit → push every run, clean repo every time) is **inherited** from `HR-028`.
 
 This file only declares **Presentation-Software-specific workflow details** not covered by the inherited tier:
 

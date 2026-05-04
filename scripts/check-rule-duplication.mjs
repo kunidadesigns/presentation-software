@@ -77,11 +77,6 @@ function isLocalRuleFile(p) {
   return /\.(md|mdc)$/i.test(p);
 }
 
-function isInheritedRuleFile(p) {
-  if (!p.startsWith(inheritedDir)) return false;
-  return /\.(md|mdc|cursorrules)$/i.test(p) || basename(p) === ".cursorrules";
-}
-
 const localFiles = [];
 const cursorrulesPath = join(consumerRoot, ".cursorrules");
 if (existsSync(cursorrulesPath)) localFiles.push(cursorrulesPath);

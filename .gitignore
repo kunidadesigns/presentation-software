@@ -45,3 +45,6 @@ Thumbs.db
 # --- Kunida network bloat prevention (auto-added by sync-rules) ---
 screenshots/
 .cursor/rules/inherited/
+
+# --- Kunida network bloat prevention (auto-added by sync-rules) ---
+.npm/

@@ -31,15 +31,10 @@
 
 import { execSync } from "node:child_process";
 import { existsSync, readFileSync, writeFileSync, mkdirSync, copyFileSync, readdirSync, statSync, rmSync } from "node:fs";
-import { join, basename, resolve, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+import { join, resolve, dirname } from "node:path";
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes("--dry-run");
-const FORCE = args.includes("--force");
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 
@@ -189,6 +184,7 @@ function ensureGitignoreExclusions() {
   //
   // - artifacts/                = transient CI build output
   // - screenshots/              = transient visual regression output
+  // - .npm/                     = accidental repo-local npm cache/log output
   // - .cursor/rules/inherited/  = synced from network; committing would freeze
   //                               stale rules and obscure source provenance
   //
@@ -207,6 +203,7 @@ function ensureGitignoreExclusions() {
   const REQUIRED = [
     "artifacts/",
     "screenshots/",
+    ".npm/",
     ".cursor/rules/inherited/",
   ];
 
