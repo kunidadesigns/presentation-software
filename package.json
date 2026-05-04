@@ -20,7 +20,8 @@
     "patterns:publish": "node scripts/patterns-publish.mjs",
     "learnings:publish": "node scripts/learnings-publish.mjs",
     "check:rule-duplication": "node scripts/check-rule-duplication.mjs .",
-    "check:network-policy-conflicts": "node scripts/check-network-policy-conflicts.mjs"
+    "check:network-policy-conflicts": "node scripts/check-network-policy-conflicts.mjs",
+    "check:gate": "npm run check:local-isolation && npm run check:network-policy-conflicts && npm run check:rule-duplication"
   },
   "kunidaRules": {
     "shared": "file:../Kunida-Rules-Network/Kunida-Shared-Business-Rules",
