@@ -41,3 +41,7 @@ out/
 # OS
 .DS_Store
 Thumbs.db
+
+# --- Kunida network bloat prevention (auto-added by sync-rules) ---
+screenshots/
+.cursor/rules/inherited/

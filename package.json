@@ -10,6 +10,23 @@
     "check": "npm run check:workspace",
     "check:workspace": "node scripts/check-workspace.mjs",
     "check:changed": "npm run check:workspace",
-    "audit:workspace": "npm run check:workspace"
+    "audit:workspace": "npm run check:workspace",
+    "sync:rules": "node scripts/sync-rules.mjs",
+    "sync:rules:dry": "node scripts/sync-rules.mjs --dry-run",
+    "check:local-isolation": "node scripts/check-local-isolation.mjs",
+    "patterns:browse": "node scripts/patterns-browse.mjs",
+    "patterns:show": "node scripts/patterns-show.mjs",
+    "patterns:adopt": "node scripts/patterns-adopt.mjs",
+    "patterns:publish": "node scripts/patterns-publish.mjs",
+    "learnings:publish": "node scripts/learnings-publish.mjs",
+    "check:rule-duplication": "node scripts/check-rule-duplication.mjs .",
+    "check:network-policy-conflicts": "node scripts/check-network-policy-conflicts.mjs"
+  },
+  "kunidaRules": {
+    "shared": "file:../Kunida-Rules-Network/Kunida-Shared-Business-Rules",
+    "stack": "file:../Kunida-Rules-Network/Kunida-WordPress-Rules-Core",
+    "patterns": "file:../Kunida-Rules-Network/Kunida-Patterns-Library",
+    "version": "1.0.0",
+    "_note": "Use file: paths during local development. Switch to github: paths once network repos are pushed to GitHub."
   }
 }

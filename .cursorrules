@@ -1,0 +1,42 @@
+# Presentation Software Agent Notes
+# Stack: Node workspace
+# Updated: 2026-05-04 (onboarded to Kunida Rules Network — RCA-208)
+
+## Network Inheritance
+
+This repo inherits rules from the Kunida Rules Network. Read order (highest precedence to lowest):
+
+1. **This file** (`.cursorrules`) — site-specific business facts, locks, brand tokens.
+2. **`.cursor/rules/*.mdc`** — local hard rules and overrides.
+3. **`.cursor/rules/local-*.mdc`** + **`.cursor/rules/local-borrowed/`** — local experiments and patterns adopted from `Kunida-Patterns-Library`.
+4. **`.cursor/rules/inherited/stack/`** — stack-specific rules from `Kunida-WordPress-Rules-Core` (this Node workspace falls back to the WP core; PHP rules don't apply, but workspace/docs/source-control rules are useful) (read-only).
+5. **`.cursor/rules/inherited/shared/`** — stack-agnostic rules from `Kunida-Shared-Business-Rules` (read-only).
+
+Local always wins. Run `npm run sync:rules` to refresh inherited rules. Inheritance contract: `Kunida-Rules-Network/docs/RULES-SOURCES.md`.
+
+To browse adoptable patterns from other Kunida sites: `npm run patterns:browse`. To verify isolation: `npm run check:local-isolation`. To audit duplication: `npm run check:rule-duplication`.
+
+---
+
+## Repo identity
+
+- **Site:** Presentation Software
+- **Working copy:** /home/david/Dev/Presentation-Software
+- **WSL is authoritative.** One-man dev; edits via agents only.
+
+## Where to look
+
+- Project orient + workflows: `AGENTS.md` (if present), `README.md`, `docs/AGENT-CONTEXT.md` (if present).
+- Single sources of truth: `docs/ops/SINGLE-SOURCES-OF-TRUTH.md` (if present).
+- Network rules: `.cursor/rules/inherited/` (read-only, refreshed via `npm run sync:rules`).
+
+## Source-control discipline
+
+Inherited from `Kunida-Shared-Business-Rules` HR-028: `git add -A` → commit → push every agent run. Do not regress this rule.
+
+## Promotion path
+
+If you find yourself writing a rule here that applies to >1 Kunida site, consider:
+1. Drafting it in this file as `HR-LOCAL-NNN` (site-specific).
+2. After validation, promoting it to `Kunida-Shared-Business-Rules` (cross-stack) or the appropriate stack core.
+3. Document the promotion in `docs/ops/DECISION-LOG.md` with an RCA reference.
